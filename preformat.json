@@ -1,0 +1,308 @@
+{
+  "nodes": [{
+    "node": 0,
+    "name": "Provide Effective Service Management Processes, Tools, & Roles",
+    "color": "#2aa198",
+    "xPos": 1
+  }, {
+    "node": 1,
+    "name": "Ensure Streamlined End-User Access to IT Services",
+    "color": "#d33682",
+    "xPos": 1
+  }, {
+    "node": 2,
+    "name": "Provide World Class End-User Help & Support",
+    "color": "#6c71c4",
+    "xPos": 1
+  }, {
+    "node": 3,
+    "name": "Contribute to Effective Service Designs, Rollouts, & Changes",
+    "color": "#268bd2",
+    "xPos": 1
+  }, {
+    "node": 4,
+    "name":"Provide Quality End-User Training & Knowledge Resources",
+    "color": "#cb4b16",
+    "xPos": 1
+  }, {
+    "node": 5,
+    "name": "Monitor & Resolve/Escalate IT Incidents & Problems",
+    "color": "#b58900",
+    "xPos": 1
+  }, {
+    "node": 6,
+    "name": "Provide Quality Data Insights to IT & the Business",
+    "color": "#859900",
+    "xPos": 1
+  },
+    {
+      "node": 7,
+      "name": "Facilitate Effective Service Retirements",
+      "color": "#dc322f",
+      "xPos": 1
+    }, {
+      "node": 8,
+      "name": "Promote IT Engagement & Professional Development",
+      "color": "#073642",
+      "xPos": 1
+    }, {
+      "node": 9,
+      "color": "#eee8d5",
+      "name": "0365 Rollout"
+    }, {
+      "node": 10,
+      "color": "#eee8d5",
+      "name": "Ent Project 1"
+    }, {
+      "node": 11,
+      "color": "#eee8d5",
+      "name": "Ent Project 2"
+    }, {
+      "node": 12,
+      "color": "#eee8d5",
+      "name": "Ent Project 3"
+    }, {
+      "node": 13,
+      "color": "#eee8d5",
+      "name":"Ent Project 4"
+    }, {
+      "node": 14,
+      "color": "#eee8d5",
+      "name": "Knowledge 2.0"
+    }, {
+      "node": 15,
+      "color": "#eee8d5",
+      "name": "Portal ReDesign"
+    },  {
+      "node": 16,
+      "color": "#eee8d5",
+      "name": "5hared 5D"
+    }, {
+      "node": 17,
+      "color": "#eee8d5",
+      "name": "Learning Paths Initiative"
+    }, {
+      "node": 18,
+      "color": "#eee8d5",
+      "name": "OC Transformation"
+    }, {
+      "node": 19,
+      "color": "#eee8d5",
+      "name": "IT Dashboards"
+    }, {
+      "node": 20,
+      "color": "#eee8d5",
+      "name":"Internal Skills Inventory"
+    },{
+      "node": 21,
+      "color": "#eee8d5",
+      "name": "Our users can easily find, select, & access the services and support they need (Critical Evidence: Discoverability)"
+    }, {
+      "node": 22,
+      "color": "#eee8d5",
+      "name": "Users are more likely to adopt & utilize the services we provide (Critical Evidence: Adoption & Utilization)"
+    }, {
+      "node": 23,
+      "color": "#eee8d5",
+      "name": "Our users know how to leverage new & existing technologies to improve their teaching, learning, research, and/or job performance (Critical Evidence: User proficiency)"
+    }, {
+      "node": 24,
+      "color": "#eee8d5",
+      "name": "IT issues are resolved efficiently & effectively so our users can get the help they need & get back to work (Critical Evidence: Incident resolution rates)"
+    }, {
+      "node": 25,
+      "color": "#eee8d5",
+      "name": "Our users have a positive experience with IT services & support (Critical Evidence: User satisfaction)"
+    }, {
+      "node": 26,
+      "color": "#eee8d5",
+      "name": "Consistently high-quality services are delivered to users across the enterprise (Critical Evidence: Efficiency & responsiveness to user & university needs)"
+    }, {
+      "node": 27,
+      "color": "#eee8d5",
+      "name": "Enterprise technology is reliable for all users at all stages of the service lifecycle (Critical Evidence: Low number of outages & other significant service disruptions)"
+    }, {
+      "node": 28,
+      "color": "#eee8d5",
+      "name": "Transparency into service/infrastructure performance enables effective problem-solving & decision-making for org. leadership (Critical Evidence: Availability of data & insights)"
+    }, {
+      "node": 29,
+      "color": "#eee8d5",
+      "name": "Based on data, projects can be created, resourced, & prioritized effectively to ensure outcomes are aligned w/real needs (Critical Evidence: Alignment of projects & needs)"
+    }, {
+      "node": 30,
+      "color": "#eee8d5",
+      "name": "Commodity services are delivered at scale, reducing duplication of effort across the enterprise (Critical Evidence: Resources freed up for innovation)"
+    }, {
+      "node": 31,
+      "color": "#eee8d5",
+      "name": "IT staff & leaders grow their skills/knowledge to enable both operational excellence & innovation (Critical Evidence: High levels of IT staff performance & engagement)"
+    }],
+  "links": [{
+    "source": 23,
+    "color": "#eee8d5",
+    "target": 1,
+    "value": 6
+    }, {
+    "source": 24,
+    "color": "#eee8d5",
+    "target": 0,
+    "value": 6
+    }, {
+    "source": 25,
+    "color": "#eee8d5",
+    "target": 1,
+    "value": 1.5
+    }, {
+    "source": 25,
+    "color": "#eee8d5",
+    "target": 0,
+    "value": 1.5
+    }, {
+    "source": 25,
+    "color": "#eee8d5",
+    "target": 2,
+    "value": 1.5
+    }, {
+    "source": 25,
+    //increment all after this by 2 that are above 7
+    "color": "#eee8d5",
+    "target": 3,
+    "value": 1.5
+    }, {
+    "source": 26,
+    "color": "#eee8d5",
+    "target": 6,
+    "value": 6
+    }, {
+    "source": 27,
+    "color": "#eee8d5",
+    "target": 1,
+    "value": 6
+    }, {
+    "source": 27,
+    "color": "#eee8d5",
+    "target": 4,
+    "value": 2
+    }, {
+    "source": 28,
+    "color": "#eee8d5",
+    "target": 5,
+    "value": 6
+    }, {
+    "source": 30,
+    "color": "#eee8d5",
+    "target": 3,
+    "value": 6
+    }, {
+    "source": 31,
+    "color": "#eee8d5",
+    "target": 5,
+    "value": 6
+    }, {
+    "source": 32,
+    "color": "#eee8d5",
+    "target": 3,
+    "value": 3
+    }, {
+    "source": 32,
+    "color": "#eee8d5",
+    "target": 4,
+    "value": 2
+    }, {
+    "source": 33,
+    "color": "#eee8d5",
+    "target": 1,
+    "value": 1.5
+    }, {
+    "source": 33,
+    "color": "#eee8d5",
+    "target": 2,
+    "value": 1.5
+    }, {
+    "source": 33,
+    "color": "#eee8d5",
+    "target": 4,
+    "value": 2
+    }, {
+    "source": 33,
+    "color": "#eee8d5",
+    "target": 5,
+    "value": 1.5
+    }, {
+    "source": 0,
+    "color": "#58cb84",
+    "target": 14,
+    "value": 6
+    }, {
+    "source": 1,
+    "color": "#58cb84",
+    "target": 8,
+    "value": 6
+    }, {
+    "source": 2,
+    "color": "#58cb84",
+    "target": 18,
+    "value": 6
+    }, {
+    "source": 3,
+    "color": "#58cb84",
+    "target": 17,
+    "value": 6
+    }, {
+    "source": 4,
+    "color": "#58cb84",
+    "target": 7,
+    "value": 6
+    }, {
+    "source": 4,
+    "color": "#58cb84",
+    "target": 9,
+    "value": 6
+    }, {
+    "source": 4,
+    "color": "#58cb84",
+    "target": 10,
+    "value": 6
+    }, {
+    "source": 4,
+    "color": "#58cb84",
+    "target": 11,
+    "value": 6
+    }, {
+    "source": 4,
+    "color": "#58cb84",
+    "target": 12,
+    "value": 6
+    }, {
+    "source": 4,
+    "color": "#58cb84",
+    "target": 13,
+    "value": 6
+    }, {
+    "source": 5,
+    "color": "#58cb84",
+    "target": 19,
+    "value": 6
+    }, {
+    "source": 6,
+    "color": "#58cb84",
+    "target": 16,
+    "value": 6
+    }, {
+    "source": 6,
+    "color": "#58cb84",
+    "target": 20,
+    "value": 6
+    }, {
+    "source": 7,
+    "color": "#58cb84",
+    "target": 15,
+    "value": 6
+    }, {
+    "source": 8,
+    "color": "#58cb84",
+    "target": 20,
+    "value": 6
+  }]
+}

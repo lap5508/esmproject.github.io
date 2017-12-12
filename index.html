@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>X-axis</title>
+<head>
+    <link rel="stylesheet" href="css/stylemain.css">
+    <!--<link rel="stylesheet" href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>-->
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="http://d3js.org/d3.v3.js"></script>
+    <script src="d3plus.full.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+
+.node rect {
+  cursor: move;
+  fill-opacity: 1.0;
+  shape-rendering: crispEdges;
+}
+
+.node text {
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.node:hover span#additionalInfo{
+    content: 'add';
+}
+
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .4;
+}
+
+.link:hover {
+  stroke-opacity: .5;
+}
+
+html, body {
+    height:100%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 160%;
+    position: relative;
+    background: #000;
+    overflow: auto;
+}
+
+</style>
+<body bgcolor=#000" onload="zoom()">
+
+    <script type="text/javascript">
+        function zoom() {
+            document.body.style.zoom = "67%"
+        }
+    </script>
+
+    <div id="json info"></div>
+
+    <!--<div id="legend">-->
+        <!--<img class="center" src="Legend.PNG" width="540" height="100">-->
+    <!--</div>-->
+    <div class="topcontainer">
+        <div id="header">
+            <div id="Impacts">
+                <h1>IMPACTS</h1>
+            </div>
+        </div>
+        <div id="header2">
+            <div id="WhatWeDo">
+                <h1>ESM: WHAT WE DO</h1>
+            </div>
+        </div>
+        <div id="header3">
+            <div id="ProjectsAndInitiatives">
+                <h1>PROJECTS & INITIATIVES</h1>
+            </div>
+        </div>
+        <div id="sidebar">
+            <div id="esmheader">
+                <h1><b>E</b>nterprise<br><b>S</b>ervice<br><b>M</b>anagement</h1>
+            </div>
+            <div id="sidebarcontainer">
+                <h3 id="sidebarheader">IT Strategic<br>Goals</h3>
+                <div class="btn-group-vertical">
+                    <button type="button" class="btn btn-primary" onclick="filterGoals()">Create a culture<br>of service<div style="font-size: 2em"><i class="fa fa-money" aria-hidden="true"></i></div></button>
+                    <button type="button" class="btn btn-primary">Optimize our<br>investments<div style="font-size: 2em"><i class="fa fa-lock" aria-hidden="true"></i></div></button>
+                    <button type="button" class="btn btn-primary">Protect our<br>assets<div style="font-size: 2em"><i class="fa fa-money" aria-hidden="true"></i></div></button>
+                    <button type="button" class="btn btn-primary">Position IT to<br>be a differentiator<div style="font-size: 2em"><i class="fa fa-lock" aria-hidden="true"></i></div></button>
+                </div>
+                <!--<div>
+                    <div class="goals-back">
+                        <div><span>    Create a culture of service    <i class="fa fa-money" aria-hidden="true"></i></span></div>
+                        <div><span>    Optimize our investments    <i class="fa fa-lock" aria-hidden="true"></i></span></div>
+                        <div><span>    Protect our assets    <i class="fa fa-money" aria-hidden="true"></i></span>></div>
+                        <div><span>    Position IT to be a differentiator    <i class="fa fa-lock" aria-hidden="true"></i></span></div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+
+        <div id="sidebar-right">
+            <div>
+                <h1>Mission</h1>
+                <div id="sidebarcontainer2">
+                    <h4 id="missionDescription">   Our mission is to serve students, faculty, staff, and leadership by
+                    providing the tools, processes, support, and expertise necessary to drive quality, operational
+                    excellence, and innovation across the enterprise.</h4>
+                </div>
+            </div>
+            <div>
+                <h1 id="additionalInfoHeader">Additional Info</h1>
+                <div id="additionalInfo">
+                    <h4 id="sidebar-description"></h4>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div class="diagram">
+                <p id="chart">
+            </div>
+        </div>
+        <div id="footer">
+            <!--<div class="center-text" id="box2">
+                <div class="goals-box">
+                    <h1>Additional Information </h1>
+                </div>
+                <div>
+                    <span id="additionalInfo">Additional description about particular node</span>
+                </div>
+            </div>-->
+        </div>
+    </div>
+
+    <script src="DataTest.js"></script>
+    <script src="sankey.js"></script>
+    <script src="DataTest.js"></script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+.topcontainer{
+    background-color: #000;
+    position: relative;
+    padding: 0 0 0 55px;
+}
+
+#sidebar{
+    position: absolute;
+    width: 280px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #3f3f3f;
+    height: 100%;
+    border: 1px solid white;
+}
+
+#header{
+    position: absolute;
+    vertical-align: middle;
+    background-color: #3f3f3f;
+    border: 1px solid whitesmoke;
+    left: 20%;
+    right: 70%;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+#header2{
+    position: absolute;
+    vertical-align: middle;
+    background-color: #3f3f3f;
+    border: 1px solid whitesmoke;
+    left: 40%;
+    right: 40%;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+#header3{
+    position: absolute;
+    vertical-align: middle;
+    background-color: #3f3f3f;
+    border: 1px solid whitesmoke;
+    left: 65%;
+    right: 20%;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+#Impacts{
+    color: white;
+    /*float: left;*/
+}
+
+#WhatWeDo{
+    color: white;
+}
+
+#ProjectsAndInitiatives{
+    color: white;
+    /*float: right;*/
+}
+
+#sidebarcontainer{
+    background-color: darkgray;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid whitesmoke;
+    height: 600px;
+
+}
+
+#sidebarcontainer2{
+    background-color: darkgray;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid whitesmoke;
+    height: 280px;
+
+}
+
+#sidebar-description{
+    margin-top: 10px;
+    color: black !important;
+}
+
+#additionalInfo{
+    background-color: darkgray;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid whitesmoke;
+    height: 280px;
+
+}
+
+#sidebar-right{
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+    border: 1px white solid;
+    color: white;
+    float:right;
+    width: 380px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #3f3f3f;
+    height: 100%;
+}
+
+#content{
+
+}
+
+#footer{
+
+}
+
+#esmheader{
+    color: white;
+    font-size: 2.8em;
+    padding: 5px;
+}
+
+.center{
+    width: 30%;
+    display: inline-block;
+    padding: 10px;
+    /*margin: 4px auto auto;*/
+    vertical-align: text-top;
+}
+
+.right{
+    width: 30%;
+    display: inline-block;
+    padding: 10px;
+    /*margin: 4px auto auto;*/
+    vertical-align: text-top;
+}
+
+
+.left{
+    width: 30%;
+    display: inline-block;
+    padding: 10px;
+    /*margin-top: -4px;*/
+    vertical-align: text-top;
+}
+
+.center-text div{
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.goals-back span{
+    background-color: grey;
+}
+
+.center-text div span{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    font-size: large;
+    text-align: center;
+}
+
+#sidebarheader{
+    text-align: center;
+}
+
+#sidebarheader-right{
+    text-align: center;
+}
+
+#missionDescription{
+    position: relative;
+    padding-bottom: 15px;
+    margin: 10px;
+    font-size: x-large;
+    text-align: left;
+    color: black !important;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+#desc-goals{
+    margin-top: 20px;
+}
+
+#box{
+    width: 40%;
+    margin-left: 5%;
+    float: left;
+}
+
+#box2{
+    width: 40%;
+    margin-right: 5%;
+    float: right;
+}
+
+.goals-box{
+    background-color: gray;
+    vertical-align: top;
+    border: 1px white solid;
+}
+
+.diagram{
+    vertical-align: text-top;
+}
+
+
+
