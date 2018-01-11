@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="css/stylemain.css">
     <!--<link rel="stylesheet" href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>-->
-    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
@@ -81,15 +81,15 @@ html, body {
         </div>
         <div id="sidebar">
             <div id="esmheader">
-                <h1><b>E</b>nterprise<br><b>S</b>ervice<br><b>M</b>anagement</h1>
+                <h1 id="esmheadertext"><b>E</b>nterprise<br><b>S</b>ervice<br><b>M</b>anagement</h1>
             </div>
             <div id="sidebarcontainer">
-                <h3 id="sidebarheader">IT Strategic<br>Goals</h3>
+                <h1 id="sidebarheader">IT Strategic<br>Goals</h1>
                 <div class="btn-group-vertical">
-                    <button type="button" class="btn btn-primary" onclick="filterGoals()">Create a culture<br>of service<div style="font-size: 2em"><i class="fa fa-money" aria-hidden="true"></i></div></button>
-                    <button type="button" class="btn btn-primary">Optimize our<br>investments<div style="font-size: 2em"><i class="fa fa-lock" aria-hidden="true"></i></div></button>
-                    <button type="button" class="btn btn-primary">Protect our<br>assets<div style="font-size: 2em"><i class="fa fa-money" aria-hidden="true"></i></div></button>
-                    <button type="button" class="btn btn-primary">Position IT to<br>be a differentiator<div style="font-size: 2em"><i class="fa fa-lock" aria-hidden="true"></i></div></button>
+                    <button type="button" id="hs" class="btn btn-primary" onmouseout="refreshGoals()" onclick="filterGoalsHS()">Create a culture<br>of service<div style="font-size: 2em"><i class="fa-handshake-o" aria-hidden="true"></i></div></button>
+                    <button type="button" id="money" class="btn btn-primary" onmouseout="refreshGoals()" onclick="filterGoalsMoney()">Optimize our<br>investments<div style="font-size: 2em"><i class="fa fa-money" aria-hidden="true"></i></div></button>
+                    <button type="button" id="lock" class="btn btn-primary" onmouseout="refreshGoals()" onclick="filterGoalsLock()">Protect our<br>assets<div style="font-size: 2em"><i class="fa fa-lock" aria-hidden="true"></i></div></button>
+                    <button type="button" id="sign" class="btn btn-primary" onmouseout="refreshGoals()" onclick="filterGoalsSign()">Position IT to<br>be a differentiator<div style="font-size: 2em"><i class="fa-map-signs" aria-hidden="true"></i></div></button>
                 </div>
                 <!--<div>
                     <div class="goals-back">
@@ -104,7 +104,7 @@ html, body {
 
         <div id="sidebar-right">
             <div>
-                <h1>Mission</h1>
+                <h1><u>Mission</u></h1>
                 <div id="sidebarcontainer2">
                     <h4 id="missionDescription">   Our mission is to serve students, faculty, staff, and leadership by
                     providing the tools, processes, support, and expertise necessary to drive quality, operational
@@ -112,7 +112,7 @@ html, body {
                 </div>
             </div>
             <div>
-                <h1 id="additionalInfoHeader">Additional Info</h1>
+                <h1 id="additionalInfoHeader"><u>Additional Info</u></h1>
                 <div id="additionalInfo">
                     <h4 id="sidebar-description"></h4>
                 </div>

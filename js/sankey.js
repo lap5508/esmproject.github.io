@@ -866,14 +866,69 @@ function getData()  {
         }]};
 }
 
-function filterGoals(){
-    var tempArray = svg.selectAll('g.node text');
-    for(var i=0; i < tempArray.size(); i++){
-        console.log(tempArray[i]);
-    }
+function filterGoalsMoney(){
 
+    var hs = '\uf2b5', sign = '\uf277', lock = '\uf023', money = '\uf0d6';
+
+    d3.selectAll('g.node text').each(function (d) {
+        if(d.icons == money || d.icons == money +"   " + sign || d.icons == hs + "   " + money +"   " + lock || d.icons == hs + "   " + money || d.icons == money + "   " + lock + "   " + sign || d.node <= 8){
+            this.style.opacity = 1.0;
+            console.log("working");
+        } else{
+            this.style.opacity = 0.2;
+        }
+
+    });
 }
 
+function filterGoalsLock(){
+
+    var hs = '\uf2b5', sign = '\uf277', lock = '\uf023', money = '\uf0d6';
+
+    d3.selectAll('g.node text').each(function (d) {
+        if(d.icons == lock || d.icons == hs +"   " + lock || d.icons == hs + "   " + money +"   " + lock || d.icons == hs + "   " + sign + "   " + lock || d.icons == money + "   " + lock + "   " + sign ||  d.node <= 8){
+            this.style.opacity = 1.0;
+            console.log("working");
+        } else{
+            this.style.opacity = 0.2;
+        }
+    });
+}
+
+function filterGoalsSign(){
+
+    var hs = '\uf2b5', sign = '\uf277', lock = '\uf023', money = '\uf0d6';
+
+    d3.selectAll('g.node text').each(function (d) {
+        if(d.icons == sign || d.icons == money +"   " + sign || d.icons == hs + "   " + sign +"   " + lock || d.icons == money + "   " + lock + "   " + sign || d.node <= 8){
+            this.style.opacity = 1.0;
+            console.log("working");
+        } else{
+            this.style.opacity = 0.2;
+        }
+    });
+}
+
+function filterGoalsHS(){
+
+    var hs = '\uf2b5', sign = '\uf277', lock = '\uf023', money = '\uf0d6';
+
+    d3.selectAll('g.node text').each(function (d) {
+        if(d.icons == hs || d.icons == hs +"   " + money || d.icons == hs + "   " + money +"   " + lock || d.icons == hs + "   " + sign + "   " + lock || d.icons == hs + "   " + lock ||  d.node <= 8){
+            this.style.opacity = 1.0;
+            console.log("working");
+        } else{
+            this.style.opacity = 0.2;
+        }
+    });
+}
+
+function refreshGoals(){
+
+    d3.selectAll('g.node text').each(function (d) {
+        this.style.opacity =1.0;
+    });
+}
 
 
 
@@ -1328,7 +1383,7 @@ var renderSankey = function(energy) {
                 if (l.source.name == d.name || l.target.name == d.name) {
                     return 1
                 } else {
-                    return 0.1
+                    return 0.3
                 }
             })
             // alert("clicked!"+d.name);
@@ -1339,6 +1394,17 @@ var renderSankey = function(energy) {
             document.getElementById("additionalInfo").style.paddingLeft = '20px';
             document.getElementById("additionalInfo").style.textAlign = 'left';
             document.getElementById("additionalInfo").style.lineHeight = '28px';
+
+            // svg.selectAll('g.node text').style("opacity", 0.1);
+            // d3.selectAll('g.node text').remove(d.name);
+            /*d3.selectAll('g.node text').style("opacity", function() {
+                if (this) {
+                    return 0.1
+                } else {
+                    return 0.1
+                }
+            });*/
+
         })
         .on("mouseout", function(d) {
             document.getElementById("additionalInfo").innerHTML="";
@@ -1415,6 +1481,7 @@ var renderSankey = function(energy) {
         // var words = d.name.match(/.{1,65}/g);
 
     };
+
 
     svg.selectAll('g.node text').each(insertLinebreaks);
     // svg.selectAll('g.node text').each(insertIcons);

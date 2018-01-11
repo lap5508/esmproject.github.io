@@ -1,5 +1,6 @@
 .topcontainer{
-    background-color: #000;
+    background-color: rgba(140, 140, 140, 0.33);
+    /*background: url("http://answermandan.com/wp-content/uploads/Grey-website-background.png");*/
     position: relative;
     padding: 0 0 0 55px;
 }
@@ -10,16 +11,20 @@
     top: 0;
     bottom: 0;
     left: 0;
-    background: #3f3f3f;
+    /*background: #3f3f3f;*/
     height: 100%;
-    border: 1px solid white;
+    /*border: 1px solid white;*/
+}
+
+#esmheadertext{
+    font-size: 1em !important;
 }
 
 #header{
     position: absolute;
     vertical-align: middle;
-    background-color: #3f3f3f;
-    border: 1px solid whitesmoke;
+    /*background-color: #3f3f3f;*/
+    /*border: 1px solid whitesmoke;*/
     left: 20%;
     right: 70%;
     margin-top: 10px;
@@ -30,10 +35,10 @@
 #header2{
     position: absolute;
     vertical-align: middle;
-    background-color: #3f3f3f;
-    border: 1px solid whitesmoke;
+    /*background-color: #3f3f3f;*/
+    /*border: 1px solid whitesmoke;*/
     left: 40%;
-    right: 40%;
+    right: 22%;
     margin-top: 10px;
     display: inline-block;
     text-align: center;
@@ -42,10 +47,10 @@
 #header3{
     position: absolute;
     vertical-align: middle;
-    background-color: #3f3f3f;
-    border: 1px solid whitesmoke;
+    /*background-color: #3f3f3f;*/
+    /*border: 1px solid whitesmoke;*/
     left: 65%;
-    right: 20%;
+    right: 10%;
     margin-top: 10px;
     display: inline-block;
     text-align: center;
@@ -53,53 +58,58 @@
 
 #Impacts{
     color: white;
+    /*text-decoration: underline;*/
     /*float: left;*/
 }
 
 #WhatWeDo{
     color: white;
+    /*text-decoration: underline;*/
 }
 
 #ProjectsAndInitiatives{
     color: white;
+    /*text-decoration: underline;*/
     /*float: right;*/
 }
 
 #sidebarcontainer{
-    background-color: darkgray;
+    /*background-color: darkgray;*/
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border: 1px solid whitesmoke;
+    /*border: 1px solid whitesmoke;*/
     height: 600px;
 
 }
 
 #sidebarcontainer2{
-    background-color: darkgray;
+    /*background-color: darkgray;*/
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border: 1px solid whitesmoke;
+    /*border: 1px solid whitesmoke;*/
     height: 280px;
 
 }
 
 #sidebar-description{
     margin-top: 10px;
-    color: black !important;
+    /*color: black !important;*/
 }
 
 #additionalInfo{
-    background-color: darkgray;
+    /*background-color: darkgray;*/
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border: 1px solid whitesmoke;
+    font-size: x-large;
+    /*border: 1px solid whitesmoke;*/
     height: 280px;
+    color: white !important;
 
 }
 
@@ -108,14 +118,14 @@
     text-align: center;
     vertical-align: middle;
     margin: 0 auto;
-    border: 1px white solid;
+    /*border: 1px white solid;*/
     color: white;
     float:right;
     width: 380px;
-    top: 0;
+    top: 20%;
     bottom: 0;
     right: 0;
-    background: #3f3f3f;
+    /*background: #3f3f3f;*/
     height: 100%;
 }
 
@@ -129,8 +139,9 @@
 
 #esmheader{
     color: white;
-    font-size: 2.8em;
+    font-size: 4.0em !important;
     padding: 5px;
+    text-decoration: underline;
 }
 
 .center{
@@ -180,6 +191,26 @@
 
 #sidebarheader{
     text-align: center;
+    color: white;
+    font-size: 3em !important;
+    margin-top: 150px;
+    text-decoration: underline;
+}
+
+#hs{
+    font-size: 2em;
+}
+
+#money{
+    font-size: 2em;
+}
+
+#lock{
+    font-size: 2em;
+}
+
+#sign{
+    font-size: 2em;
 }
 
 #sidebarheader-right{
@@ -192,7 +223,7 @@
     margin: 10px;
     font-size: x-large;
     text-align: left;
-    color: black !important;
+    /*color: black !important;*/
     top: 50%;
     transform: translateY(-50%);
 }
