@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Set up connections!</title>
+    <link rel="stylesheet" href="stylemain.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="data.json"></script>
+    <script type="text/javascript" src="editData.js"></script>
+
+</head>
+<body onload="readInObject()">
+        <p>
+            <label>Select node</label>
+            <select id = "nodeDropdown">
+            </select>
+
+            <button onclick="findLinks()">Submit</button>
+        </p>
+        <p>
+                <label>Here are the links</label>
+                <select id = "linksDropdown">
+                </select>
+        </p>
+        <p>
+                <label>Create new link</label>
+                <select id = "newPossibleLinks">
+                </select>
+
+                <button onclick="createNewLink()">Create Link</button>
+        </p>
+</body>
+</html>

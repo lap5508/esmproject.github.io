@@ -1,0 +1,569 @@
+{
+    "nodes": [{
+        "node": 0,
+        "name": "Provide Mgmt Processes, Tools, & Roles",
+        "color": "#2aa198",
+        "xPos": 1,
+        "description": "desc 0",
+        "toolbar": "",
+        "column": 1,
+        "width" : 300,
+        "alignment": "middle",
+        "translatex": 160,
+        "nodeshift": 0
+    }, {
+        "node": 1,
+        "name": "Ensure Streamlined End-User Access to IT Services",
+        "color": "#d33682",
+        "xPos": 1,
+        "description": "desc 0",
+        "icons": "",
+        "column": 1,
+        "toolbar": "",
+        "width" : 300,
+        "alignment": "middle",
+        "translatex": 160,
+        "nodeshift": 0
+    }, {
+        "node": 2,
+        "name": "Provide World Class End-User Help & Support",
+        "color": "#6c71c4",
+        "xPos": 1,
+        "description": "desc 0",
+        "icons": "",
+        "column": 1,
+        "toolbar": "",
+        "width" : 300,
+        "alignment": "middle",
+        "translatex": 160,
+        "nodeshift": 0
+    }, {
+        "node": 3,
+        "name": "Contribute to Effective Service Designs, Rollouts, & Changes",
+        "color": "#268bd2",
+        "xPos": 1,
+        "description": "desc 0",
+        "icons": "",
+        "column": 1,
+        "toolbar": "",
+        "width" : 300,
+        "alignment": "middle",
+        "translatex": 160,
+        "nodeshift": 0
+    }, {
+        "node": 4,
+        "name":"Provide Quality End-User Training & Knowledge Resources",
+        "color": "#cb4b16",
+        "xPos": 1,
+        "description": "desc 0",
+        "icons": "",
+        "column": 1,
+        "toolbar": "",
+        "width" : 300,
+        "alignment": "middle",
+        "translatex": 160,
+        "nodeshift": 0
+    }, {
+        "node": 5,
+        "name": "Monitor, Resolve, & Escalate IT Incidents & Problems",
+        "color": "#b58900",
+        "xPos": 1,
+        "description": "desc 0",
+        "icons": "",
+        "column": 1,
+        "toolbar": "",
+        "width" : 300,
+        "alignment": "middle",
+        "translatex": 160,
+        "nodeshift": 0
+    }, {
+        "node": 6,
+        "name": "Provide Quality Data Insights to IT & the Business",
+        "color": "#859900",
+        "xPos": 1,
+        "description": "desc 0",
+        "icons": "",
+        "column": 1,
+        "toolbar": "",
+        "width" : 300,
+        "alignment": "middle",
+        "translatex": 160,
+        "nodeshift": 0
+    }, {
+        "node": 7,
+        "name": "Facilitate Effective Service Retirements",
+        "color": "#dc322f",
+        "xPos": 1,
+        "description": "desc 0",
+        "icons": "",
+        "column": 1,
+        "toolbar": "",
+        "width" : 300,
+        "alignment": "middle",
+        "translatex": 160,
+        "nodeshift": 0
+    }, {
+        "node": 8,
+        "name": "Promote IT Engagement & Professional Development",
+        "color": "#073642",
+        "xPos": 1,
+        "description": "desc 0",
+        "icons": "",
+        "column": 1,
+        "toolbar": "",
+        "width" : 300,
+        "alignment": "middle",
+        "translatex": 160,
+        "nodeshift": 0
+    }, {
+        "node": 9,
+        "color": "#eee8d5",
+        "name": "0365 Rollout",
+        "description": "desc 0",
+        "column": 2,
+        "toolbar": "",
+        "width" : 15,
+        "alignment": "end",
+        "translatex": 0,
+        "nodeshift": 135
+    }, {
+        "node": 10,
+        "color": "#eee8d5",
+        "name": "Ent Project 1",
+        "description": "desc 0",
+        "toolbar": "",
+        "column": 2,
+        "width" : 15,
+        "alignment": "end",
+        "translatex": 0,
+        "nodeshift": 135
+    }, {
+        "node": 11,
+        "color": "#eee8d5",
+        "name": "Ent Project 2",
+        "column": 2,
+        "description": "desc 0",
+        "toolbar": "",
+        "width" : 15,
+        "alignment": "end",
+        "translatex": 0,
+        "nodeshift": 135
+    }, {
+        "node": 12,
+        "color": "#eee8d5",
+        "name": "Ent Project 3",
+        "description": "desc 0",
+        "column": 2,
+        "toolbar": "",
+        "width" : 15,
+        "alignment": "end",
+        "translatex": 0,
+        "nodeshift": 135
+    }, {
+        "node": 13,
+        "color": "#eee8d5",
+        "name":"Ent Project 4",
+        "description": "desc 0",
+        "toolbar": "",
+        "column": 2,
+        "width" : 15,
+        "alignment": "end",
+        "translatex": 0,
+        "nodeshift": 135
+    }, {
+        "node": 14,
+        "color": "#eee8d5",
+        "name": "Knowledge 2.0",
+        "description": "desc 0",
+        "icons": "",
+        "column": 2,
+        "toolbar": "",
+        "width" : 15,
+        "alignment": "end",
+        "translatex": 0,
+        "nodeshift": 135
+    }, {
+        "node": 15,
+        "color": "#eee8d5",
+        "name": "Portal ReDesign",
+        "column": 2,
+        "description": "desc 0",
+        "icons": "",
+        "toolbar": "",
+        "width" : 15,
+        "alignment": "end",
+        "translatex": 0,
+        "nodeshift": 135
+    },  {
+        "node": 16,
+        "color": "#eee8d5",
+        "name": "5hared 5D",
+        "description": "desc 0",
+        "icons": "",
+        "column": 2,
+        "toolbar": "",
+        "width" : 15,
+        "alignment": "end",
+        "translatex": 0,
+        "nodeshift": 135
+    }, {
+        "node": 17,
+        "color": "#eee8d5",
+        "name": "Learning Paths Initiative",
+        "description": "desc 0",
+        "icons": "",
+        "column": 2,
+        "toolbar": "",
+        "width" : 15,
+        "alignment": "end",
+        "translatex": 0,
+        "nodeshift": 135
+    }, {
+        "node": 18,
+        "color": "#eee8d5",
+        "name": "OC Transformation",
+        "description": "desc 0",
+        "icons": "",
+        "column": 2,
+        "toolbar": "",
+        "width" : 15,
+        "alignment": "end",
+        "translatex": 0,
+        "nodeshift": 135
+    }, {
+        "node": 19,
+        "color": "#eee8d5",
+        "name": "IT Dashboards",
+        "description": "desc 0",
+        "icons": "",
+        "column": 2,
+        "toolbar": "",
+        "width" : 15,
+        "alignment": "end",
+        "translatex": 0,
+        "nodeshift": 135
+    }, {
+        "node": 20,
+        "color": "#eee8d5",
+        "name":"Internal Skills Inventory",
+        "description": "desc 0",
+        "icons": "",
+        "column": 2,
+        "toolbar": "",
+        "width" : 15,
+        "alignment": "end",
+        "translatex": 0,
+        "nodeshift": 135
+    },  {
+        "node": 21,
+        "color": "#eee8d5",
+        "name": "Our users can easily find, select, & access the services and support they need",
+        "description": "desc 0",
+        "toolbar": "Critical Evidence: Discoverability",
+        "width" : 15,
+        "column": 0,
+        "alignment": "end",
+        "translatex": 0,
+        "nodeshift": 0
+    }, {
+        "node": 22,
+        "color": "#eee8d5",
+        "name": "Users are more likely to adopt & utilize IT services",
+        "description": "desc 0",
+        "toolbar": "Critical Evidence: Adoption & Utilization",
+        "width" : 15,
+        "column": 0,
+        "alignment": "end",
+        "translatex": 0,
+        "nodeshift": 0
+    }, {
+        "node": 23,
+        "color": "#eee8d5",
+        "name": "Users know how to leverage new & existing technologies to improve their teaching, learning, research, and job performance",
+        "description": "desc 0",
+        "toolbar": "Critical Evidence: User proficiency",
+        "width" : 15,
+        "column": 0,
+        "alignment": "end",
+        "translatex": 0,
+        "nodeshift": 0
+    }, {
+        "node": 24,
+        "color": "#eee8d5",
+        "name": "IT issues are resolved efficiently & effectively so users can get the help they need & get back to work",
+        "description": "desc 0",
+        "toolbar": "Critical Evidence: Incident resolution rates",
+        "width" : 15,
+        "column": 0,
+        "alignment": "end",
+        "translatex": 0,
+        "nodeshift": 0
+    }, {
+        "node": 25,
+        "color": "#eee8d5",
+        "name": "Users have a positive perception of IT services & support",
+        "description": "desc 0",
+        "toolbar": "Critical Evidence: User satisfaction",
+        "width" : 15,
+        "column": 0,
+        "alignment": "end",
+        "translatex": 0,
+        "nodeshift": 0
+    }, {
+        "node": 26,
+        "color": "#eee8d5",
+        "name": "Consistently high-quality services are delivered to users across the enterprise",
+        "description": "desc 0",
+        "toolbar": "Critical Evidence: Efficiency & responsiveness to user & university needs",
+        "width" : 15,
+        "column": 0,
+        "alignment": "end",
+        "translatex": 0,
+        "nodeshift": 0
+    }, {
+        "node": 27,
+        "color": "#eee8d5",
+        "name": "Enterprise technology is reliable for all users at all stages of the service lifecycle ",
+        "description": "desc 0",
+        "toolbar": "Critical Evidence: Low number of outages & other significant service disruptions",
+        "width" : 15,
+        "column": 0,
+        "alignment": "end",
+        "translatex": 0,
+        "nodeshift": 0
+    }, {
+        "node": 28,
+        "color": "#eee8d5",
+        "name": "Transparency into service and infrastructure performance enables effective problem-solving & decision-making",
+        "description": "desc 0",
+        "toolbar": "Critical Evidence: Availability of data & insights",
+        "width" : 15,
+        "column": 0,
+        "alignment": "end",
+        "translatex": 0,
+        "nodeshift": 0
+    }, {
+        "node": 29,
+        "color": "#eee8d5",
+        "name": "Based on data, projects can be created, resourced, & prioritized effectively to ensure outcomes are aligned w/real needs ",
+        "description": "desc 0",
+        "toolbar": "Critical Evidence: Alignment of projects & needs",
+        "width" : 15,
+        "column": 0,
+        "alignment": "end",
+        "translatex": 0,
+        "nodeshift": 0
+    }, {
+        "node": 30,
+        "color": "#eee8d5",
+        "name": "Commodity services are delivered at scale, reducing duplication of effort across the enterprise ",
+        "description": "desc 0",
+        "toolbar": "Critical Evidence: Resources freed up for innovation",
+        "width" : 15,
+        "column": 0,
+        "alignment": "end",
+        "translatex": 0,
+        "nodeshift": 0
+    }, {
+        "node": 31,
+        "color": "#eee8d5",
+        "name": "IT staff & leaders grow their skills/knowledge to enable both operational excellence & innovation",
+        "description": "desc 0",
+        "toolbar": "Critical Evidence: High levels of IT staff performance & engagement",
+        "width" : 15,
+        "column": 0,
+        "alignment": "end",
+        "translatex": 0,
+        "nodeshift": 0
+    }],
+    "links": [{
+        "source": 21,
+        "color": "#d33682",
+        "target": 1,
+        "value": 6
+    },  {
+        "source": 22,
+        "color": "#d33682",
+        "target": 1,
+        "value": 1.5
+    },  {
+        "source": 22,
+        "color": "#6c71c4",
+        "target": 2,
+        "value": 1.5
+    },  {
+        "source": 22,
+        "color": "#268bd2",
+        "target": 3,
+        "value": 1.5
+    },  {
+        "source": 22,
+        "color": "#cb4b16",
+        "target": 4,
+        "value": 1.5
+    },  {
+        "source": 23,
+        "color": "#6c71c4",
+        "target": 2,
+        "value": 6
+    },  {
+        "source": 24,
+        "color": "#2aa198",
+        "target": 0,
+        "value": 2
+    },  {
+        "source": 24,
+        "color": "#d33682",
+        "target": 1,
+        "value": 2
+    },  {
+        "source": 24,
+        "color": "#b58800",
+        "target": 5,
+        "value": 2
+    },  {
+        "source": 25,
+        "color": "#6c71c4",
+        "target": 2,
+        "value": 1.5
+    },  {
+        "source": 25,
+        "color": "#268bd2",
+        "target": 3,
+        "value": 1.5
+    },  {
+        "source": 25,
+        "color": "#cb4b16",
+        "target": 4,
+        "value": 1.5
+    },  {
+        "source": 25,
+        "color": "#b58800",
+        "target": 5,
+        "value": 1.5
+    },  {
+        "source": 26,
+        "color": "#2aa198",
+        "target": 0,
+        "value": 3
+    },  {
+        "source": 26,
+        "color": "#268bd2",
+        "target": 3,
+        "value": 3
+    },  {
+        "source": 27,
+        "color": "#2aa198",
+        "target": 0,
+        "value": 1.2
+    },  {
+        "source": 27,
+        "color": "#268bd2",
+        "target": 3,
+        "value": 1.2
+    },  {
+        "source": 27,
+        "color": "#b58800",
+        "target": 5,
+        "value": 1.2
+    },  {
+        "source": 27,
+        "color": "#859900",
+        "target": 6,
+        "value": 1.2
+    },  {
+        "source": 27,
+        "color": "#dc322f",
+        "target": 7,
+        "value": 1.2
+    },  {
+        "source": 28,
+        "color": "#859900",
+        "target": 6,
+        "value": 6
+    },  {
+        "source": 29,
+        "color": "#859900",
+        "target": 6,
+        "value": 6
+    },  {
+        "source": 30,
+        "color": "#2aa198",
+        "target": 0,
+        "value": 2
+    },  {
+        "source": 30,
+        "color": "#268bd2",
+        "target": 3,
+        "value": 2
+    },  {
+        "source": 30,
+        "color": "#dc322f",
+        "target": 7,
+        "value": 2
+    },  {
+        "source": 31,
+        "color": "#073642",
+        "target": 8,
+        "value": 6
+    },  {
+        "source": 0,
+        "color": "#2aa198",
+        "target": 14,
+        "value": 6
+    },  {
+        "source": 1,
+        "color": "#d33682",
+        "target": 15,
+        "value": 6
+    },  {
+        "source": 2,
+        "color": "#6c71c4",
+        "target": 16,
+        "value": 6
+    },  {
+        "source": 3,
+        "color": "#268bd2",
+        "target": 9,
+        "value": 1.5
+    },  {
+        "source": 3,
+        "color": "#268bd2",
+        "target": 10,
+        "value": 1.5
+    },  {
+        "source": 3,
+        "color": "#268bd2",
+        "target": 11,
+        "value": 1.5
+    },  {
+        "source": 3,
+        "color": "#268bd2",
+        "target": 12,
+        "value": 1.5
+    },  {
+        "source": 4,
+        "color": "#cb4b16",
+        "target": 17,
+        "value": 6
+    },  {
+        "source": 5,
+        "color": "#b58800",
+        "target": 18,
+        "value": 6
+    },  {
+        "source": 6,
+        "color": "#859900",
+        "target": 19,
+        "value": 6
+    },  {
+        "source": 7,
+        "color": "#dc322f",
+        "target": 13,
+        "value": 6
+    }, {
+        "source": 8,
+        "color": "#073642",
+        "target": 20,
+        "value": 6
+    }]}
