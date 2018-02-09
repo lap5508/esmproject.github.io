@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Set up connections!</title>
+    <link rel="stylesheet" href="stylemain.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+</head>
+<style>
+    .dropdown-toggle{
+        width: 300px;
+        text-align: left;
+        background-color: #D0E8FC;
+    }
+
+    .top-btn{
+        width: 300px;
+        color: white;
+        margin: 10px;
+    }
+
+    .center{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .top-bar{
+        /*background-color: #d1d1d1;*/
+        padding: 20px 0px 20px 0px;
+    }
+
+    .center-bar{
+        /*height: 300px;*/
+        margin: 50px 0px 50px 0px;
+    }
+
+    .center-content{
+        height: 50%;
+    }
+
+
+
+    html, body{
+        background-color: #507492;
+        height: 100%;
+    }
+
+    label{
+        color: white;
+    }
+
+    .container{
+        background-color: #8AA7BF;
+        height: 950px;
+    }
+
+</style>
+<body onload="readInObject()">
+
+    <div class="page">
+        <div class="container bg-image" id="">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center top-bar">
+                        <label style="color: white; font-size: 24px;">Select the group that you'd like to manage connections for:</label>
+                        <div class="btn-group">
+                            <button class="btn top-btn" style="background-color: #507492" onclick="sortByColumnImpacts()">Impacts</button>
+                            <button class="btn top-btn" style="background-color: #507492" onclick="sortByColumnWWD()">ESM: What We DO</button>
+                            <button class="btn top-btn" style="background-color: #507492" onclick="sortByProjectsAndInitiatives()">Projects & Initiatives</button>
+                        </div>
+                    </div>
+                    <div class="center center-bar">
+                        <div class="btn-group">
+                            <div class="center">
+                                <label id="nodeHeader"></label>
+                            </div>
+                            <select class="btn dropdown-toggle"  id="nodeDropdown" data-toggle="dropdown" href="#">
+                                Action
+                                <span class="caret"></span>
+                            </select>
+                        </div>
+                        <button onclick="findLinks()">Submit</button>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+
+                </div>
+                <div class="col-lg-4">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <label>Here are the links</label>
+                    <div class="btn-group">
+                        <select class="btn dropdown-toggle"  id="linksDropdown" data-toggle="dropdown" href="#">
+                            Action
+                            <span class="caret"></span>
+                        </select>
+                    </div>
+                    <button onclick="deleteLink()">Delete Link</button>
+                </div>
+                <div class="col-lg-6">
+                    <label>Create new link</label>
+                    <div class="btn-group">
+                        <select class="btn dropdown-toggle"  id="newPossibleLinks" data-toggle="dropdown" href="#">
+                            Action
+                            <span class="caret"></span>
+                        </select>
+                    </div>
+                    <button onclick="createNewLink()">Create Link</button>
+                </div>
+                <div class="col-lg-12">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+<script src="../js/FirebaseDB.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="data.json"></script>
+<script type="text/javascript" src="../js/editData.js"></script>
+
+</body>
+</html>

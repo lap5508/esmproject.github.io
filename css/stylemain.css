@@ -1,259 +1,131 @@
-.topcontainer{
-    background-color: rgba(140, 140, 140, 0.33);
-    /*background: url("http://answermandan.com/wp-content/uploads/Grey-website-background.png");*/
+.col-left{
+    background-color: #393939;
+    height: 800px;
+    color: white;
+}
+
+.left-container{
+    font-size: 2em;
+}
+
+.goals-header{
+    color: white;
+    font-size: 2em;
+    background-color: lightgrey;
+    width: 80% !important;
+    margin-left: 10%;
+    margin-bottom: 10% !important;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.button-group{
+    margin-bottom: 10%;
+}
+
+.buttons{
+    margin-top: 5px !important;
+}
+
+h3{
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+#top-info-bar{
+    text-align: center;
+    background-color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 120px;
+    border: 3px solid #393939;
+    margin-top: 10px;
+}
+
+#additional-info{
+    color: black;
+    font-size: 1.5em;
+    text-align: left;
+    padding-left: 0px;
+    line-height: 20px;
+    padding-top: 10px;
+
+}
+
+.impacts{
+    color: white;
+    background-color: #393939;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.5em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 30%;
+    border: 1px solid white;
+}
+
+.wwd{
+    color: white;
+    background-color: #393939;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.5em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 40%;
+    margin-right: 5%;
+    border: 1px solid white;
+}
+
+.p-and-j{
+    color: white;
+    background-color: #393939;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.5em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 30%;
+    border: 1px solid white;
+}
+
+.svg-container {
+    display: inline-block;
     position: relative;
-    padding: 0 0 0 55px;
+    width: 100%;
+    padding-bottom: 100%; /* aspect ratio */
+    vertical-align: top;
+    overflow: visible !important;
+    height: 20% !important;
 }
-
-#sidebar{
+.svg-content-responsive {
+    display: inline-block;
     position: absolute;
-    width: 280px;
-    top: 0;
-    bottom: 0;
+    top: 10px;
     left: 0;
-    /*background: #3f3f3f;*/
-    height: 100%;
-    /*border: 1px solid white;*/
 }
 
-#esmheadertext{
-    font-size: 1em !important;
+.impacts-header{
+    text-align: left;
+    padding-top: 15px;
 }
 
-#header{
-    position: absolute;
-    vertical-align: middle;
-    /*background-color: #3f3f3f;*/
-    /*border: 1px solid whitesmoke;*/
-    left: 20%;
-    right: 70%;
-    margin-top: 10px;
-    display: inline-block;
+#wwd-header{
     text-align: center;
+    padding-top: 15px;
+    padding-left: 220px;
 }
 
-#header2{
-    position: absolute;
-    vertical-align: middle;
-    /*background-color: #3f3f3f;*/
-    /*border: 1px solid whitesmoke;*/
-    left: 40%;
-    right: 22%;
-    margin-top: 10px;
-    display: inline-block;
-    text-align: center;
-}
-
-#header3{
-    position: absolute;
-    vertical-align: middle;
-    /*background-color: #3f3f3f;*/
-    /*border: 1px solid whitesmoke;*/
-    left: 65%;
-    right: 10%;
-    margin-top: 10px;
-    display: inline-block;
-    text-align: center;
-}
-
-#Impacts{
-    color: white;
-    /*text-decoration: underline;*/
-    /*float: left;*/
-}
-
-#WhatWeDo{
-    color: white;
-    /*text-decoration: underline;*/
-}
-
-#ProjectsAndInitiatives{
-    color: white;
-    /*text-decoration: underline;*/
-    /*float: right;*/
-}
-
-#sidebarcontainer{
-    /*background-color: darkgray;*/
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    /*border: 1px solid whitesmoke;*/
-    height: 600px;
-
-}
-
-#sidebarcontainer2{
-    /*background-color: darkgray;*/
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    /*border: 1px solid whitesmoke;*/
-    height: 280px;
-
-}
-
-#sidebar-description{
-    margin-top: 10px;
-    /*color: black !important;*/
-}
-
-#additionalInfo{
-    /*background-color: darkgray;*/
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: x-large;
-    /*border: 1px solid whitesmoke;*/
-    height: 280px;
-    color: white !important;
-
-}
-
-#sidebar-right{
-    position: absolute;
-    text-align: center;
-    vertical-align: middle;
-    margin: 0 auto;
-    /*border: 1px white solid;*/
-    color: white;
-    float:right;
-    width: 380px;
-    top: 20%;
-    bottom: 0;
-    right: 0;
-    /*background: #3f3f3f;*/
-    height: 100%;
+.projects-header{
+    text-align: right;
+    padding-top: 15px;
 }
 
 #content{
-
+    height: auto;
 }
-
-#footer{
-
-}
-
-#esmheader{
-    color: white;
-    font-size: 4.0em !important;
-    padding: 5px;
-    text-decoration: underline;
-}
-
-.center{
-    width: 30%;
-    display: inline-block;
-    padding: 10px;
-    /*margin: 4px auto auto;*/
-    vertical-align: text-top;
-}
-
-.right{
-    width: 30%;
-    display: inline-block;
-    padding: 10px;
-    /*margin: 4px auto auto;*/
-    vertical-align: text-top;
-}
-
-
-.left{
-    width: 30%;
-    display: inline-block;
-    padding: 10px;
-    /*margin-top: -4px;*/
-    vertical-align: text-top;
-}
-
-.center-text div{
-    text-align: center;
-    vertical-align: middle;
-    color: white;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.goals-back span{
-    background-color: grey;
-}
-
-.center-text div span{
-    padding-left: 10px;
-    padding-right: 10px;
-    color: white;
-    font-size: large;
-    text-align: center;
-}
-
-#sidebarheader{
-    text-align: center;
-    color: white;
-    font-size: 3em !important;
-    margin-top: 150px;
-    text-decoration: underline;
-}
-
-#hs{
-    font-size: 2em;
-}
-
-#money{
-    font-size: 2em;
-}
-
-#lock{
-    font-size: 2em;
-}
-
-#sign{
-    font-size: 2em;
-}
-
-#sidebarheader-right{
-    text-align: center;
-}
-
-#missionDescription{
-    position: relative;
-    padding-bottom: 15px;
-    margin: 10px;
-    font-size: x-large;
-    text-align: left;
-    /*color: black !important;*/
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-
-#desc-goals{
-    margin-top: 20px;
-}
-
-#box{
-    width: 40%;
-    margin-left: 5%;
-    float: left;
-}
-
-#box2{
-    width: 40%;
-    margin-right: 5%;
-    float: right;
-}
-
-.goals-box{
-    background-color: gray;
-    vertical-align: top;
-    border: 1px white solid;
-}
-
-.diagram{
-    vertical-align: text-top;
-}
-
 
 
