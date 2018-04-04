@@ -84,9 +84,12 @@ d3.sankey = function() {
     // Also, if the source and target are not objects, assume they are indices.
     function computeNodeLinks() {
         var count = 0;
+
         nodes.forEach(function(node) {
+            
             node.sourceLinks = [];
             node.targetLinks = [];
+            console.log(node.targetLinks);
             // console.log("success" + count + node.name);
             // count++;
         });
@@ -308,12 +311,7 @@ d3.sankey = function() {
 
 ///////////////////////////////////////////
 
-//////////////////////// Retrieving Customized Data /////////////////////////
 
-//The following function is used to define the properties of all of the individual nodes as well as their links.
-//It holds information such as the name that is to be shown, the colors of the links and nodes, the description that is to be shown when hovered over,
-//the the position along the x-axis, the width of the node, how far the name should be translated to the right, the alignment of the text for the name,
-//the icons that are to be appended to each name, and the node id which is synonymous with its name but is assigned an integer for best practice
 
 function getData2()  {
     var hs = '\uf2b5', sign = '\uf277', lock = '\uf023', money = '\uf0d6';
@@ -904,10 +902,33 @@ function getData2()  {
         }]};
 }
 
+//////////////////////// Retrieving Customized Data /////////////////////////
+
+//The following function is used to define the properties of all of the individual nodes as well as their links.
+//It holds information such as the name that is to be shown, the colors of the links and nodes, the description that is to be shown when hovered over,
+//the the position along the x-axis, the width of the node, how far the name should be translated to the right, the alignment of the text for the name,
+//the icons that are to be appended to each name, and the node id which is synonymous with its name but is assigned an integer for best practice
+
 function getData() {
     var hs = '\uf2b5', sign = '\uf277', lock = '\uf023', money = '\uf0d6';
     getTheData(function(data){
         console.log(data);
+        // var savedLinks = data.links;
+        // var nodes = data.nodes;
+        // console.log(savedLinks);
+        // for(var i = 0; i < savedLinks.length; i++){
+        //     for(var j = 0; j < nodes.length; j++){
+        //         if(savedLinks[i].target == nodes[j].name){
+        //             savedLinks[i].target = nodes[j].node;
+        //         } else if (savedLinks[i].source == nodes[j].name){
+        //             savedLinks[i].source = nodes[j].node;
+        //         }
+        //     }
+        // }
+
+        // console.log(data);
+
+        // data.links = savedLinks;
         renderSankey(data);
         // return data;
     });
@@ -921,7 +942,7 @@ function getData() {
 
 function filterGoalsMoney(){
 
-    var hs = '\uf2b5', sign = '\uf277', lock = '\uf023', money = '\uf0d6';
+    var hs = "", sign = "", lock = "", money = "" ;
 
     d3.selectAll('g.node text').each(function (d) {
         if(d.icons == money || d.icons == money +"   " + sign || d.icons == hs + "   " + money +"   " + lock || d.icons == hs + "   " + money || d.icons == money + "   " + lock + "   " + sign || d.node <= 8){
@@ -1110,7 +1131,7 @@ console.log("called");
                     return 0.0
                 }
             })
-            document.getElementById("additional-info").innerHTML=d.name;
+            document.getElementById("additional-info").innerHTML=d.description;
             // console.log(document.getElementById("top-info-bar").style.borderColor=d.color);
             document.getElementById("top-info-bar").style.borderColor=d.color;
         })
@@ -1136,7 +1157,7 @@ console.log("called");
         .attr("fill", "white")
         .attr("width", 10)
         .attr("class", "text-component")
-        .attr('font-size', function(d) { return d.size+'em'} ).attr('font-size', function(d) { return 1.5+'em'} )
+        .attr('font-size', function(d) { return d.size+'em'} ).attr('font-size', function(d) { return 1.8+'em'} )
         .text(function(d) {
             if(d.name != null){
                 return(d.name + "  " + d.icons);
@@ -1159,8 +1180,20 @@ console.log("called");
         el.text('');
         for (var i = 0; i < words.length; i++) {
             var tspan = el.append('tspan').text(words[i] + "\n");
-            if(i % 5 === 0){
-                    tspan.attr('x', -5).attr('dy', '20');
+            if(d.alignment == "middle"){
+                if(d.node == 6){
+                    if(i % 3 === 0){
+                        tspan.attr('x', -5).attr('dy', '30');
+                    }
+                }
+                if(i % 4 === 0){
+                    tspan.attr('x', -5).attr('dy', '30');
+                }
+            }
+            else{
+                if(i % 10 === 0){
+                    tspan.attr('x', -5).attr('dy', '30');
+                }
             }
         }
     };

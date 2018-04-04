@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Set up connections!</title>
+    <link rel="stylesheet" href="stylemain.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/stylemain.css">
+</head>
+<style>
+    .dropdown-toggle{
+        width: 300px;
+        text-align: left;
+        background-color: #D0E8FC;
+        background-color: white;
+    }
+
+    .top-btn{
+        width: 300px;
+        color: white;
+        margin: 10px;
+    }
+
+    .center{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .top-bar{
+        /*background-color: #b8e0ff;*/
+        padding: 20px 0px 20px 0px;
+    }
+
+    .center-bar{
+        /*height: 300px;*/
+        margin: 50px 0px 50px 0px;
+    }
+
+    .center-content{
+        height: 50%;
+    }
+
+
+    html, body{
+        /*background-image: url("https://cpb-us-east-1-juc1ugur1qwqqqo4.stackpathdns.com/sites.psu.edu/dist/3/33259/files/2015/09/Fall-Stock-Old-Main-1.jpg");*/
+        /*height: 100%;*/
+        /*background-size: 100%;*/
+        /*opacity: 0.98;*/
+        /*-webkit-background-size: contain;*/
+        /*-moz-background-size: contain;*/
+        /*-o-background-size: contain;*/
+    }
+
+    label{
+        color: white;
+        text-align: end;
+    }
+
+    .container{
+        height: 100%;
+    }
+
+    h3{
+        color: white;
+    }
+
+    input{
+        margin: 10px;
+        background-color: white;
+        border: none;
+    }
+
+    select{
+        margin: 20px;
+    }
+
+    button{
+        margin: 10px;
+    }
+
+    .nodeSelectionBox{
+        background-color: background-color: rgba(118, 143, 163, 0.6);
+        height: 200px;
+        width: 100%;
+    }
+
+    .existingLinksBox{
+        background-color: rgba(118, 143, 163, 0.6);
+        height: 250px;
+        margin-right: 20px;
+        width: 500px;
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+
+    .addLinksBox{
+        background-color: rgba(118, 143, 163, 0.6);
+        height: 250px;
+        margin-right: 35px;
+        float: right;
+        width: 500px;
+        margin-top: 20px;
+    }
+
+
+    .node-dropdown-selection-group {
+        width: 100%;
+        text-align: center;
+        margin: 0px 20px 0px 20px;
+    }
+
+    .node-dropdown-selection {
+        /*text-align: center;*/
+    }
+
+    h2 {
+        color: white;
+    }
+
+    #deleteNodeAndLinks{
+        margin-top: 20px;
+        width: 60%;
+    }
+
+    .createLinkBox{
+        background-color: rgba(118, 143, 163, 0.6);
+        height: 230px;
+        width: 100%;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    #createLinkButton{
+        float: right;
+        margin-top: 20px;
+        width: 100px;
+    }
+
+    .deleteLinkBox{
+        background-color: rgba(118, 143, 163, 0.6);
+        height: 230px;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    #clearDeleteLinkSel{
+        float: right;
+        margin-top: 20px;
+        width: 100px;
+    }
+
+    #clearCreateLinkSel{
+        float: right;
+        margin-top: 20px;
+        width: 100px;
+    }
+
+    #deleteLinkButton{
+        float: right;
+        margin-top: 20px;
+        width: 100px;
+    }
+
+    #newNodeTitle{
+        width: 100%;
+        text-align: center;
+        background-color: white;
+    }
+
+    #newNodeDesc{
+        width: 100%;
+        height: 150px;
+        text-align: center;
+        background-color: white;
+    }
+
+    .nodeAddBox{
+        background-color: rgba(118, 143, 163, 0.6);
+        height: 340px;
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+
+    #createNewNodeButton {
+        text-align: center;
+        float: right;
+        width: 360px;
+        margin-bottom: 20px;
+    }
+
+    .addBoxHeader {
+        text-align: center;
+    }
+
+    #bg-image{
+        /*opacity: 0.9;*/
+    }
+
+    .header-box {
+        /*background-color: #768fa3;*/
+        padding: 2px 0px 2px 0px;
+        border-radius: 15px;
+    }
+
+    .style1 {
+        background: url("https://stateimpact.npr.org/pennsylvania/files/2015/12/AP_954228551734.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .row {
+        /*opacity: .95;*/
+    }
+
+    #newNodeColumnLabel {
+        vertical-align: middle;
+    }
+
+    #select-create-delete {
+        /*background-color: #8a9da6;*/
+        background-color: rgba(138, 157, 166, 0.6);
+        height: 730px;
+        padding: 0px 20px 0px 20px;
+        border-radius: 5px;
+    }
+
+    h4{
+        color: white;
+    }
+
+    span {
+        color: white;
+    }
+
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+
+</style>
+<body onload="readInObject();">
+
+<div class="page">
+    <div class="style1" id="bg-image">
+        <div class="container">
+            <div>
+                <img id="background-pic">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="select-create-delete">
+                            <div class="center top-bar">
+                                <div class="row">
+                                    <div class="node-dropdown-selection-group">
+                                        <h3>SELECT A NODE TO MODIFY</h3>
+                                        <div class="col-lg-4">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="btn-group">
+                                                        <div class="header-box">
+                                                            <h4>Impacts</h4>
+                                                        </div>
+                                                        <select class="btn dropdown-toggle"  id="impactDropdown" data-toggle="dropdown" href="#" onchange="findLinks(0)">
+                                                            Action
+                                                            <span class="caret"></span>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="btn-group">
+                                                        <div class="header-box">
+                                                            <h4>What We Do</h4>
+                                                        </div>
+                                                        <select class="btn dropdown-toggle"  id="wwdDropdown" data-toggle="dropdown" href="#" onchange="findLinks(1)">
+                                                            Action
+                                                            <span class="caret"></span>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="btn-group">
+                                                        <div class="header-box">
+                                                            <h4>Projects & Initiatives</h4>
+                                                        </div>
+                                                        <select class="btn dropdown-toggle"  id="pAndIDropdown" data-toggle="dropdown" href="#" onchange="findLinks(2)">
+                                                            Action
+                                                            <span class="caret"></span>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button id="deleteNodeAndLinks" onclick="deleteNode()">Delete selected node & all connected links</button>
+
+                                <div class="col-lg-12 createLinkBox">
+                                    <div>
+                                        <h3>CREATE A LINK</h3>
+                                    </div>
+                                    <div>
+                                        <label>Create a new link from </label> <label id="createLinkDesc"> the selected node </label> <label>to another existing node:</label>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div>
+                                                <h4>Impacts</h4>
+                                            </div>
+                                            <div class="btn-group">
+                                                <select class="btn dropdown-toggle"  id="impactLinkCreateDropdown" data-toggle="dropdown" href="#" onchange="selectedLinkCreateDropdown(0)">
+                                                    Action
+                                                    <span class="caret"></span>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div>
+                                                <h4>What We Do</h4>
+                                            </div>
+                                            <div class="btn-group">
+                                                <select class="btn dropdown-toggle"  id="wwdLinkCreateDropdown" data-toggle="dropdown" href="#" onchange="selectedLinkCreateDropdown(1)">
+                                                    Action
+                                                    <span class="caret"></span>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div>
+                                                <h4>Projects & Initiatives</h4>
+                                            </div>
+                                            <div class="btn-group">
+                                                <select class="btn dropdown-toggle"  id="pAndILinkCreateDropdown" data-toggle="dropdown" href="#" onchange="selectedLinkCreateDropdown(2)">
+                                                    Action
+                                                    <span class="caret"></span>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button id="clearCreateLinkSel">Clear</button>
+                                        <button id="createLinkButton" onclick="createNewLink()">Create Link</button>
+                                    </div>
+
+                                </div>
+                        </div>
+                        <div class="col-lg-12 deleteLinkBox">
+                            <div>
+                                <h3>DELETE A LINK</h3>
+                            </div>
+                            <div>
+                                <label>Delete an existing link from </label> <label id="deleteLinkDesc"> the selected node </label> <label>to another existing node:</label>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div>
+                                        <h4>Impacts</h4>
+                                    </div>
+                                    <div class="btn-group">
+                                        <select class="btn dropdown-toggle"  id="impactLinkDeleteDropdown" data-toggle="dropdown" href="#" onchange="selectedLinkDeleteDropdown(0)">
+                                            Action
+                                            <span class="caret"></span>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div>
+                                        <h4>What We Do</h4>
+                                    </div>
+                                    <div class="btn-group">
+                                        <select class="btn dropdown-toggle"  id="wwdLinkDeleteDropdown" data-toggle="dropdown" href="#" onchange="selectedLinkDeleteDropdown(1)">
+                                            Action
+                                            <span class="caret"></span>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div>
+                                        <h4>Projects & Initiatives</h4>
+                                    </div>
+                                    <div class="btn-group">
+                                        <select class="btn dropdown-toggle"  id="pAndILinkDeleteDropdown" data-toggle="dropdown" href="#" onchange="selectedLinkDeleteDropdown(2)">
+                                            Action
+                                            <span class="caret"></span>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button id="clearDeleteLinkSel">Clear</button>
+                                <button id="deleteLinkButton" onclick="deleteLink()">Delete Link</button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-12 nodeAddBox">
+                            <div class="row">
+                                <div class="addBoxHeader">
+                                    <div>
+                                        <h3>CREATE NEW NODE</h3>
+                                    </div>
+                                    <div>
+                                        <!--<div>
+                                            <label id="newNodeColumnLabel">Create a new node in: </label>
+                                        </div>-->
+                                        <select class="btn dropdown-toggle"  id="newNodeColumnDropdown" data-toggle="dropdown" href="#">
+                                            <option value="Impact">Impact</option>
+                                            <option value="WWD">What We Do</option>
+                                            <option value="PAndI">Projects & Initiatives</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="addEntry">
+                                        <div>
+                                            <input type="text" id="newNodeTitle" onchange="setTempTitle()" placeholder="Node Text">
+                                            <input type="text" id="newNodeDesc" onchange="setTempDesc()" placeholder="Node Description">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <h3>IT Strategic Goal Alignments</h3>
+                                    <div class="btn-group">
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" value="checked" id="hs">Create a Culture of Service</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" value="" id="money">Optimize Our Investments</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" value="" id="lock">Protect Our Assets</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" value="" id="sign">Position IT to be a Differentiator</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button onclick="addNode()" id="createNewNodeButton">Create new node</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--<div class="row">
+                    <div class="col-lg-12 sidebar goals-header">
+                        <div style="text-align: center; color: #393939;">IT Strategic Goals</div>
+                        <div class="btn-group-vertical button-group btn-block" style="padding-top: 20px;">
+                            <button type="button" id="hs" class="btn btn-primary buttons" style="background-color: #393939;" onmouseout="refreshGoals()" onclick="filterGoalsHS()">Create a culture<br>of service<div style="font-size: 2em"><img src="../assets/Handshake-icon.png" style="width:50px;height:50px;"></div></button>
+                            <button type="button" id="money" class="btn btn-primary buttons" style="background-color: #393939;" onmouseout="refreshGoals()" onclick="filterGoalsMoney()">Optimize our<br>investments<div style="font-size: 2em"><i class="fa fa-money" aria-hidden="true"></i></div></button>
+                            <button type="button" id="lock" class="btn btn-primary buttons" style="background-color: #393939;" onmouseout="refreshGoals()" onclick="filterGoalsLock()">Protect our<br>assets<div style="font-size: 2em"><i class="fa fa-lock" aria-hidden="true"></i></div></button>
+                            <button type="button" id="sign" class="btn btn-primary buttons" style="background-color: #393939;" onmouseout="refreshGoals()" onclick="filterGoalsSign()">Position IT to<br>be a differentiator<div style="font-size: 2em"><img src="../assets/Map-Signs-Icon.png" style="width:40px;height:40px;"></div></button>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+<script src="../js/FirebaseDB.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="../js/Bootstrap/bootbox.min.js"></script>
+<script type="text/javascript" src="data.json"></script>
+<script type="text/javascript" src="../js/editData.js"></script>
+
+</body>
+</html>
