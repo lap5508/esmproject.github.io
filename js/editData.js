@@ -8,6 +8,7 @@ function readInObject () {
         // console.log(data);
         nodes = data.nodes;
         links = data.links;
+        clearDropdowns();
         sortByColumnImpacts();
         sortByColumnProjectsAndInitiatives();
         sortByColumnWWD();
@@ -474,21 +475,23 @@ function findLinks(col){
     // console.log(val + " col: " + col);
 
     $(createLinkDesc).text( title );
+    $(createLinkDesc).css('text-decoration', 'underline');
     $(createLinkDesc).text(function(i, value) {
         return value.replace(/&/g, "&&");
     });
     $(createLinkDesc).text(function(i, value) {
         return value.replace(/&amp;/g, "");
     });
-    $(createLinkDesc).css("color", "red");
+    $(createLinkDesc).css("color", "white");
     $(deleteLinkDesc).text( title );
+    $(deleteLinkDesc).css('text-decoration', 'underline');
     $(deleteLinkDesc).text(function(i, value) {
         return value.replace(/&/g, "&&");
     });
     $(deleteLinkDesc).text(function(i, value) {
         return value.replace(/&amp;/g, "");
     });
-    $(deleteLinkDesc).css("color", "red");
+    $(deleteLinkDesc).css("color", "white");
 
     var nodeLinksDelete = [];
     for(var i = 0; i < links.length; i++){
@@ -802,23 +805,6 @@ function addNode () {
 }*/
 
 function findNewPossibleLinks(valName){
-    /*var nodeLinksCreate = [];
-    for(var i = 0; i < nodes.length; i++){
-        nodeLinksCreate.push(nodes[i]);
-        // console.log("Node Links Create Before Pop: " + nodeLinksCreate[i] + " " + i);
-    }
-
-    console.log("Length before: " + nodeLinksCreate.length);
-    for(var i = 0; i < links.length; i++){
-        if(links[i].source == valName || links[i].target == valName){
-            // console.log("Link: " + links[i].source + " Origin Selected: " + valName);
-            console.log(nodes[links[i].target].name);
-            // nodeLinksCreate.pop(nodes[links[i].target]);
-            var index = nodeLinksCreate.indexOf(i);
-            nodeLinksCreate.splice(index, 1);
-        }
-    }*/
-    // console.log("Length after: " + nodeLinksCreate.length);
 
     var newPossibleLinks = [];
     console.log(newPossibleLinks);
@@ -995,7 +981,7 @@ function createNewLink () {
 
         setLinks(links, nodes);
 
-
+        readInObject();
 
         alert("A new link has been created!");
     }
@@ -1060,9 +1046,24 @@ function deleteLink(){
         links.splice(linkToDelete,1);
         setLinks(links, nodes);
 
+        readInObject();
         // alert("A link has been deleted!");
     }
 
+}
+
+function clearDropdowns(){
+    $("#wwdLinkCreateDropdown").empty();
+    $("#impactLinkCreateDropdown").empty();
+    $("#pAndILinkCreateDropdown").empty();
+
+    $("#wwdLinkDeleteDropdown").empty();
+    $("#impactLinkDeleteDropdown").empty();
+    $("#pAndILinkDeleteDropdown").empty();
+
+    $("#wwdDropdown").empty();
+    $("#impactDropdown").empty();
+    $("#pAndIDropdown").empty();
 }
 
 function removeOptions(selectBox){
